@@ -1,0 +1,610 @@
+fileFormatVersion: 2
+guid: e9ca800b14f6e014d95a0dc900709d69
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Accessories
+    100002: Accessories_ArmRibbon
+    100004: Accessories_Band
+    100006: Accessories_Beard
+    100008: Armor_Aetos
+    100010: Armor_Apollo
+    100012: Armor_Ares
+    100014: Armor_Euphrosyne
+    100016: Armor_Hades
+    100018: Armor_Hermes
+    100020: Armor_Hydra
+    100022: Armor_Mercury
+    100024: Armor_Zeus
+    100026: Barcers_Hermes
+    100028: Body
+    100030: Body 1
+    100032: Boots
+    100034: Boots_Aetos
+    100036: Boots_Ares
+    100038: Boots_Eros
+    100040: Boots_Rhea
+    100042: Bottom
+    100044: Bottom_Aetos
+    100046: Bottom_Apollo
+    100048: Bottom_Euphrosyne
+    100050: Bottom_Hades
+    100052: Bottom_Hermes
+    100054: Bottom_Mercury
+    100056: Bracers
+    100058: Bracers_Aetos
+    100060: Bracers_Apollo
+    100062: Bracers_Ares
+    100064: Bracers_Hades
+    100066: Bracers_Rhea
+    100068: Eye_Left
+    100070: Eye_Right
+    100072: Hair_Messy
+    100074: Hair_Parted
+    100076: Hair_Rastafari
+    100078: Head
+    100080: Head 1
+    100082: Helmet_Aetos
+    100084: Helmet_Apollo
+    100086: Helmet_Ares
+    100088: Helmet_Eros
+    100090: Helmet_Hades
+    100092: Helmet_Mask
+    100094: Helmet_Rhea
+    100096: Helmet_Zeus
+    100098: Hips
+    100100: LeftArm
+    100102: LeftFoot
+    100104: LeftForeArm
+    100106: LeftHand
+    100108: LeftHandIndex1
+    100110: LeftHandIndex2
+    100112: LeftHandIndex3
+    100114: LeftHandMiddle1
+    100116: LeftHandMiddle2
+    100118: LeftHandMiddle3
+    100120: LeftHandPinky1
+    100122: LeftHandPinky2
+    100124: LeftHandPinky3
+    100126: LeftHandRing1
+    100128: LeftHandRing2
+    100130: LeftHandRing3
+    100132: LeftHandThumb1
+    100134: LeftHandThumb2
+    100136: LeftHandThumb3
+    100138: LeftLeg
+    100140: LeftShoulder
+    100142: LeftToeBase
+    100144: LeftUpLeg
+    100146: Neck
+    100148: Overall
+    100150: Overall_Ares
+    100152: Overall_Eros
+    100154: Overall_Rhea
+    100156: RightArm
+    100158: RightFoot
+    100160: RightForeArm
+    100162: RightHand
+    100164: RightHandIndex1
+    100166: RightHandIndex2
+    100168: RightHandIndex3
+    100170: RightHandMiddle1
+    100172: RightHandMiddle2
+    100174: RightHandMiddle3
+    100176: RightHandPinky1
+    100178: RightHandPinky2
+    100180: RightHandPinky3
+    100182: RightHandRing1
+    100184: RightHandRing2
+    100186: RightHandRing3
+    100188: RightHandThumb1
+    100190: RightHandThumb2
+    100192: RightHandThumb3
+    100194: RightLeg
+    100196: RightShoulder
+    100198: RightToeBase
+    100200: RightUpLeg
+    100202: //RootNode
+    100204: RomanCharacter 1
+    100206: Shield_Athena
+    100208: Shield_Hades
+    100210: Shield_Hydra
+    100212: Shield_Scutum
+    100214: Shields
+    100216: Shoulders
+    100218: Shoulders_Aetos
+    100220: Shoulders_Ares
+    100222: Shoulders_Hades
+    100224: Shoulders_Hermes
+    100226: Shoulders_Hydra
+    100228: Spine
+    100230: Spine1
+    100232: Spine2
+    100234: Top
+    100236: Weapon_Axe
+    100238: Weapon_Axe_Amphiclia
+    100240: Weapon_Axe_Hydra
+    100242: Weapon_Axe_Minotaur
+    100244: Weapon_HammerClub
+    100246: Weapon_Sica
+    100248: Weapon_Sickle
+    100250: Weapon_SpearA
+    100252: Weapon_SpearB
+    100254: Weapon_SpikedClub
+    100256: Weapon_SwordAthena
+    100258: Weapon_SwordGladius
+    100260: Weapon_Trident
+    100262: Weapons
+    100264: Wrists
+    100266: Wrists_Aetos
+    100268: Wrists_Ares
+    100270: Wrists_Bands
+    100272: Wrists_Hades
+    100274: Wrists_Hydra
+    100276: Weapon_Axe 1
+    100278: Weapon_Axe_Amphiclia 1
+    100280: Weapon_Axe_Hydra 1
+    100282: Weapon_Axe_Minotaur 1
+    100284: Weapon_HammerClub 1
+    100286: Weapon_Sica 1
+    100288: Weapon_Sickle 1
+    100290: Weapon_SpearA 1
+    100292: Weapon_SpearB 1
+    100294: Weapon_SpikedClub 1
+    100296: Weapon_SwordAthena 1
+    100298: Weapon_SwordGladius 1
+    100300: Weapon_Trident 1
+    100302: Weapons_Left
+    100304: Weapons_Right
+    400000: Accessories
+    400002: Accessories_ArmRibbon
+    400004: Accessories_Band
+    400006: Accessories_Beard
+    400008: Armor_Aetos
+    400010: Armor_Apollo
+    400012: Armor_Ares
+    400014: Armor_Euphrosyne
+    400016: Armor_Hades
+    400018: Armor_Hermes
+    400020: Armor_Hydra
+    400022: Armor_Mercury
+    400024: Armor_Zeus
+    400026: Barcers_Hermes
+    400028: Body
+    400030: Body 1
+    400032: Boots
+    400034: Boots_Aetos
+    400036: Boots_Ares
+    400038: Boots_Eros
+    400040: Boots_Rhea
+    400042: Bottom
+    400044: Bottom_Aetos
+    400046: Bottom_Apollo
+    400048: Bottom_Euphrosyne
+    400050: Bottom_Hades
+    400052: Bottom_Hermes
+    400054: Bottom_Mercury
+    400056: Bracers
+    400058: Bracers_Aetos
+    400060: Bracers_Apollo
+    400062: Bracers_Ares
+    400064: Bracers_Hades
+    400066: Bracers_Rhea
+    400068: Eye_Left
+    400070: Eye_Right
+    400072: Hair_Messy
+    400074: Hair_Parted
+    400076: Hair_Rastafari
+    400078: Head
+    400080: Head 1
+    400082: Helmet_Aetos
+    400084: Helmet_Apollo
+    400086: Helmet_Ares
+    400088: Helmet_Eros
+    400090: Helmet_Hades
+    400092: Helmet_Mask
+    400094: Helmet_Rhea
+    400096: Helmet_Zeus
+    400098: Hips
+    400100: LeftArm
+    400102: LeftFoot
+    400104: LeftForeArm
+    400106: LeftHand
+    400108: LeftHandIndex1
+    400110: LeftHandIndex2
+    400112: LeftHandIndex3
+    400114: LeftHandMiddle1
+    400116: LeftHandMiddle2
+    400118: LeftHandMiddle3
+    400120: LeftHandPinky1
+    400122: LeftHandPinky2
+    400124: LeftHandPinky3
+    400126: LeftHandRing1
+    400128: LeftHandRing2
+    400130: LeftHandRing3
+    400132: LeftHandThumb1
+    400134: LeftHandThumb2
+    400136: LeftHandThumb3
+    400138: LeftLeg
+    400140: LeftShoulder
+    400142: LeftToeBase
+    400144: LeftUpLeg
+    400146: Neck
+    400148: Overall
+    400150: Overall_Ares
+    400152: Overall_Eros
+    400154: Overall_Rhea
+    400156: RightArm
+    400158: RightFoot
+    400160: RightForeArm
+    400162: RightHand
+    400164: RightHandIndex1
+    400166: RightHandIndex2
+    400168: RightHandIndex3
+    400170: RightHandMiddle1
+    400172: RightHandMiddle2
+    400174: RightHandMiddle3
+    400176: RightHandPinky1
+    400178: RightHandPinky2
+    400180: RightHandPinky3
+    400182: RightHandRing1
+    400184: RightHandRing2
+    400186: RightHandRing3
+    400188: RightHandThumb1
+    400190: RightHandThumb2
+    400192: RightHandThumb3
+    400194: RightLeg
+    400196: RightShoulder
+    400198: RightToeBase
+    400200: RightUpLeg
+    400202: //RootNode
+    400204: RomanCharacter 1
+    400206: Shield_Athena
+    400208: Shield_Hades
+    400210: Shield_Hydra
+    400212: Shield_Scutum
+    400214: Shields
+    400216: Shoulders
+    400218: Shoulders_Aetos
+    400220: Shoulders_Ares
+    400222: Shoulders_Hades
+    400224: Shoulders_Hermes
+    400226: Shoulders_Hydra
+    400228: Spine
+    400230: Spine1
+    400232: Spine2
+    400234: Top
+    400236: Weapon_Axe
+    400238: Weapon_Axe_Amphiclia
+    400240: Weapon_Axe_Hydra
+    400242: Weapon_Axe_Minotaur
+    400244: Weapon_HammerClub
+    400246: Weapon_Sica
+    400248: Weapon_Sickle
+    400250: Weapon_SpearA
+    400252: Weapon_SpearB
+    400254: Weapon_SpikedClub
+    400256: Weapon_SwordAthena
+    400258: Weapon_SwordGladius
+    400260: Weapon_Trident
+    400262: Weapons
+    400264: Wrists
+    400266: Wrists_Aetos
+    400268: Wrists_Ares
+    400270: Wrists_Bands
+    400272: Wrists_Hades
+    400274: Wrists_Hydra
+    400276: Weapon_Axe 1
+    400278: Weapon_Axe_Amphiclia 1
+    400280: Weapon_Axe_Hydra 1
+    400282: Weapon_Axe_Minotaur 1
+    400284: Weapon_HammerClub 1
+    400286: Weapon_Sica 1
+    400288: Weapon_Sickle 1
+    400290: Weapon_SpearA 1
+    400292: Weapon_SpearB 1
+    400294: Weapon_SpikedClub 1
+    400296: Weapon_SwordAthena 1
+    400298: Weapon_SwordGladius 1
+    400300: Weapon_Trident 1
+    400302: Weapons_Left
+    400304: Weapons_Right
+    2300000: Shield_Athena
+    2300002: Shield_Hades
+    2300004: Shield_Hydra
+    2300006: Shield_Scutum
+    2300008: Weapon_Axe
+    2300010: Weapon_Axe_Amphiclia
+    2300012: Weapon_Axe_Hydra
+    2300014: Weapon_Axe_Minotaur
+    2300016: Weapon_HammerClub
+    2300018: Weapon_Sica
+    2300020: Weapon_Sickle
+    2300022: Weapon_SpearA
+    2300024: Weapon_SpearB
+    2300026: Weapon_SpikedClub
+    2300028: Weapon_SwordAthena
+    2300030: Weapon_SwordGladius
+    2300032: Weapon_Trident
+    2300034: Weapon_Axe 1
+    2300036: Weapon_Axe_Amphiclia 1
+    2300038: Weapon_Axe_Hydra 1
+    2300040: Weapon_Axe_Minotaur 1
+    2300042: Weapon_HammerClub 1
+    2300044: Weapon_Sica 1
+    2300046: Weapon_Sickle 1
+    2300048: Weapon_SpearA 1
+    2300050: Weapon_SpearB 1
+    2300052: Weapon_SpikedClub 1
+    2300054: Weapon_SwordAthena 1
+    2300056: Weapon_SwordGladius 1
+    2300058: Weapon_Trident 1
+    3300000: Shield_Athena
+    3300002: Shield_Hades
+    3300004: Shield_Hydra
+    3300006: Shield_Scutum
+    3300008: Weapon_Axe
+    3300010: Weapon_Axe_Amphiclia
+    3300012: Weapon_Axe_Hydra
+    3300014: Weapon_Axe_Minotaur
+    3300016: Weapon_HammerClub
+    3300018: Weapon_Sica
+    3300020: Weapon_Sickle
+    3300022: Weapon_SpearA
+    3300024: Weapon_SpearB
+    3300026: Weapon_SpikedClub
+    3300028: Weapon_SwordAthena
+    3300030: Weapon_SwordGladius
+    3300032: Weapon_Trident
+    3300034: Weapon_Axe 1
+    3300036: Weapon_Axe_Amphiclia 1
+    3300038: Weapon_Axe_Hydra 1
+    3300040: Weapon_Axe_Minotaur 1
+    3300042: Weapon_HammerClub 1
+    3300044: Weapon_Sica 1
+    3300046: Weapon_Sickle 1
+    3300048: Weapon_SpearA 1
+    3300050: Weapon_SpearB 1
+    3300052: Weapon_SpikedClub 1
+    3300054: Weapon_SwordAthena 1
+    3300056: Weapon_SwordGladius 1
+    3300058: Weapon_Trident 1
+    4300000: Body
+    4300002: Eye_Right
+    4300004: Eye_Left
+    4300006: Hair_Parted
+    4300008: Hair_Messy
+    4300010: Hair_Rastafari
+    4300012: Helmet_Aetos
+    4300014: Helmet_Rhea
+    4300016: Helmet_Hades
+    4300018: Helmet_Ares
+    4300020: Helmet_Eros
+    4300022: Helmet_Zeus
+    4300024: Helmet_Apollo
+    4300026: Helmet_Mask
+    4300028: Wrists_Ares
+    4300030: Wrists_Aetos
+    4300032: Wrists_Bands
+    4300034: Wrists_Hades
+    4300036: Wrists_Hydra
+    4300038: Armor_Hermes
+    4300040: Armor_Apollo
+    4300042: Armor_Aetos
+    4300044: Armor_Hades
+    4300046: Armor_Euphrosyne
+    4300048: Armor_Hydra
+    4300050: Armor_Ares
+    4300052: Armor_Mercury
+    4300054: Armor_Zeus
+    4300056: Bottom_Hermes
+    4300058: Bottom_Apollo
+    4300060: Bottom_Euphrosyne
+    4300062: Bottom_Aetos
+    4300064: Bottom_Hades
+    4300066: Bottom_Mercury
+    4300068: Shoulders_Hermes
+    4300070: Shoulders_Ares
+    4300072: Shoulders_Aetos
+    4300074: Shoulders_Hydra
+    4300076: Shoulders_Hades
+    4300078: Bracers_Apollo
+    4300080: Bracers_Ares
+    4300082: Bracers_Aetos
+    4300084: Bracers_Hades
+    4300086: Barcers_Hermes
+    4300088: Bracers_Rhea
+    4300090: Boots_Aetos
+    4300092: Boots_Rhea
+    4300094: Boots_Ares
+    4300096: Boots_Eros
+    4300098: Overall_Rhea
+    4300100: Overall_Eros
+    4300102: Overall_Ares
+    4300104: Accessories_Band
+    4300106: Accessories_ArmRibbon
+    4300108: Accessories_Beard
+    4300110: Shield_Hydra
+    4300112: Shield_Athena
+    4300114: Shield_Hades
+    4300116: Shield_Scutum
+    4300118: Weapon_SpearA
+    4300120: Weapon_SpearB
+    4300122: Weapon_Trident
+    4300124: Weapon_SpikedClub
+    4300126: Weapon_HammerClub
+    4300128: Weapon_Sica
+    4300130: Weapon_SwordAthena
+    4300132: Weapon_Axe
+    4300134: Weapon_Axe_Amphiclia
+    4300136: Weapon_Axe_Hydra
+    4300138: Weapon_Axe_Minotaur
+    4300140: Weapon_Sickle
+    4300142: Weapon_SwordGladius
+    4300144: Weapon_SpearA
+    4300146: Weapon_SpearB
+    4300148: Weapon_Trident
+    4300150: Weapon_SpikedClub
+    4300152: Weapon_HammerClub
+    4300154: Weapon_Sica
+    4300156: Weapon_SwordAthena
+    4300158: Weapon_Axe
+    4300160: Weapon_Axe_Amphiclia
+    4300162: Weapon_Axe_Hydra
+    4300164: Weapon_Axe_Minotaur
+    4300166: Weapon_Sickle
+    4300168: Weapon_SwordGladius
+    9500000: //RootNode
+    13700000: Accessories_ArmRibbon
+    13700002: Accessories_Band
+    13700004: Accessories_Beard
+    13700006: Armor_Aetos
+    13700008: Armor_Apollo
+    13700010: Armor_Ares
+    13700012: Armor_Euphrosyne
+    13700014: Armor_Hades
+    13700016: Armor_Hermes
+    13700018: Armor_Hydra
+    13700020: Armor_Mercury
+    13700022: Armor_Zeus
+    13700024: Barcers_Hermes
+    13700026: Body 1
+    13700028: Boots_Aetos
+    13700030: Boots_Ares
+    13700032: Boots_Eros
+    13700034: Boots_Rhea
+    13700036: Bottom_Aetos
+    13700038: Bottom_Apollo
+    13700040: Bottom_Euphrosyne
+    13700042: Bottom_Hades
+    13700044: Bottom_Hermes
+    13700046: Bottom_Mercury
+    13700048: Bracers_Aetos
+    13700050: Bracers_Apollo
+    13700052: Bracers_Ares
+    13700054: Bracers_Hades
+    13700056: Bracers_Rhea
+    13700058: Eye_Left
+    13700060: Eye_Right
+    13700062: Hair_Messy
+    13700064: Hair_Parted
+    13700066: Hair_Rastafari
+    13700068: Helmet_Aetos
+    13700070: Helmet_Apollo
+    13700072: Helmet_Ares
+    13700074: Helmet_Eros
+    13700076: Helmet_Hades
+    13700078: Helmet_Mask
+    13700080: Helmet_Rhea
+    13700082: Helmet_Zeus
+    13700084: Overall_Ares
+    13700086: Overall_Eros
+    13700088: Overall_Rhea
+    13700090: Shoulders_Aetos
+    13700092: Shoulders_Ares
+    13700094: Shoulders_Hades
+    13700096: Shoulders_Hermes
+    13700098: Shoulders_Hydra
+    13700100: Wrists_Aetos
+    13700102: Wrists_Ares
+    13700104: Wrists_Bands
+    13700106: Wrists_Hades
+    13700108: Wrists_Hydra
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: -1
+      lastFrame: 39
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
