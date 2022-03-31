@@ -14,6 +14,8 @@ public class FireBullet : MonoBehaviour
 
     bool bGunActive = false;
 
+    public elementalSelect eselected;
+
     void Start()
     {
 
@@ -42,6 +44,8 @@ public class FireBullet : MonoBehaviour
         {
             if( bSpawnBullet && bGunActive )
             {
+
+                
                 bSpawnBullet = false;
 
                 Vector3 dir = detectHand.GetDirectionToFingers();
