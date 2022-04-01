@@ -6,6 +6,7 @@ public class FireBullet : MonoBehaviour
 {
     public EHand m_Hand;
 
+
     public GameObject m_Bullet;
 
     public float m_Speed;
@@ -16,10 +17,8 @@ public class FireBullet : MonoBehaviour
 
     public elementalSelect eselected;
 
-    void Start()
-    {
+    float destroyAfterTime = 3.0f;
 
-    }
 
     public void Shoot()
     {
@@ -39,13 +38,12 @@ public class FireBullet : MonoBehaviour
     void Update()
     {
         DetectionManager.DetectionHand detectHand = DetectionManager.Get().GetHand(m_Hand);
+  
 
         if ( detectHand.IsSet() )
         {
             if( bSpawnBullet && bGunActive )
             {
-
-                
                 bSpawnBullet = false;
 
                 Vector3 dir = detectHand.GetDirectionToFingers();
@@ -54,6 +52,9 @@ public class FireBullet : MonoBehaviour
 
                 GameObject obj = Instantiate(m_Bullet, startPos, m_Bullet.transform.rotation);
                 obj.GetComponent<Rigidbody>().velocity = dir * m_Speed;
+
+                Destroy(obj, destroyAfterTime);
+
             }
         }
     }
