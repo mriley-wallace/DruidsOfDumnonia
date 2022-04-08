@@ -31,8 +31,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 3aeee50717965a64abdb1a6efba8eb70, type: 3}
-        m_Scale: {x: 0.63074785, y: 1}
-        m_Offset: {x: -1656.2823, y: 0}
+        m_Scale: {x: 0.6550233, y: 1}
+        m_Offset: {x: -1701.168, y: 0}
     m_Floats:
     - _BlendOp: 0
     - _BumpScale: 1
@@ -64,3 +64,4 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SoftParticleFadeParams: {r: 0, g: 1, b: 0, a: 0}
     - _TintColor: {r: 0.41176468, g: 0.37868986, b: 0.35726643, a: 0.5}
+  m_BuildTextureStacks: []
