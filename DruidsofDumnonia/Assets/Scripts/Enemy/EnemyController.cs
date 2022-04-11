@@ -12,6 +12,8 @@ public class EnemyController : MonoBehaviour
 
     NavMeshAgent agent;
 
+    public Animator enemyAnimator;
+
     void Start()
     {
         target = PlayerManager.instance.player.transform;
@@ -25,12 +27,21 @@ public class EnemyController : MonoBehaviour
 
         if (distance <= lookRadius)
         {
+            enemyAnimator.SetBool("isIdle", false);
+            enemyAnimator.SetBool("isWalking", true);
             agent.SetDestination(target.position);
+
+            
 
             if (distance <= agent.stoppingDistance)
             {
                 FaceTarget();
+                enemyAnimator.SetBool("isWalking", false);
             }
+        }
+        else
+        {
+            enemyAnimator.SetBool("isIdle", true);
         }
 
     }
