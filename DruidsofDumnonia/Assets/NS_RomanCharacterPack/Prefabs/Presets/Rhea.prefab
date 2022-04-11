@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4558528124103650}
   - component: {fileID: 1333016125}
-  - component: {fileID: 1333016123}
   - component: {fileID: 1333016126}
   - component: {fileID: 4925498961860301643}
   - component: {fileID: 1644280235}
+  - component: {fileID: 2793200935628463941}
   m_Layer: 0
   m_Name: Rhea
   m_TagString: Enemy
@@ -52,20 +52,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 3
---- !u!114 &1333016123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1005195539652592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fa51e27ce5ca724d9a32e195c7278fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lookRadius: 100
-  enemyAnimator: {fileID: 95854645410961842}
 --- !u!195 &1333016126
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -80,7 +66,7 @@ NavMeshAgent:
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 2
+  m_StoppingDistance: 1.5
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -116,6 +102,21 @@ CapsuleCollider:
   m_Height: 1.7287952
   m_Direction: 1
   m_Center: {x: 0.014314921, y: 0.81605643, z: -0.022196623}
+--- !u!114 &2793200935628463941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005195539652592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa51e27ce5ca724d9a32e195c7278fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lookRadius: 20
+  attackRadius: 2
+  enemyAnimator: {fileID: 95854645410961842}
 --- !u!1 &1011925727753886
 GameObject:
   m_ObjectHideFlags: 0

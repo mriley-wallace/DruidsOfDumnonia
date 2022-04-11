@@ -8,6 +8,8 @@ public class EnemyController : MonoBehaviour
 
     public float lookRadius = 10.0f;
 
+    public float attackRadius = 2.0f;
+
     Transform target;
 
     NavMeshAgent agent;
@@ -25,13 +27,14 @@ public class EnemyController : MonoBehaviour
     {
         float distance = Vector3.Distance(target.position, transform.position);
 
-        if (distance <= lookRadius)
+        if (distance <= lookRadius && distance >= attackRadius)
         {
             enemyAnimator.SetBool("isIdle", false);
             enemyAnimator.SetBool("isWalking", true);
+            enemyAnimator.SetBool("isAttack", false);
             agent.SetDestination(target.position);
 
-            
+
 
             if (distance <= agent.stoppingDistance)
             {
@@ -39,7 +42,13 @@ public class EnemyController : MonoBehaviour
                 enemyAnimator.SetBool("isWalking", false);
             }
         }
-        else
+        if (distance <= attackRadius)
+            {
+                enemyAnimator.SetBool("isWalking", false);
+                enemyAnimator.SetBool("isAttack", true);
+            }
+        
+        if(distance > lookRadius)
         {
             enemyAnimator.SetBool("isIdle", true);
         }

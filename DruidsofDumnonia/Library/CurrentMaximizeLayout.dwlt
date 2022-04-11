@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 97
+  controlID: 45969
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 98
+  controlID: 45970
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 45971
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -219,10 +219,10 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 244}
+      scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 26a5fdff92a5fdffd2a5fdffd6a5fdffdaa5fdffdea5fdff5aa6fdff5ea6fdff62a6fdff86a6fdff8ca6fdff98a6fdff58affdffa8b2fdff16b5fdff12b6fdffa6b9fdff0abbfdff06bcfdffc6cbfdff8407ffff8807ffffbc66ffff0a9901004c9a01007a9a0100aa9a0100e69a0100909b0100ca9b01000a9c01001e9c0100289c0100529c0100169d0100289d0100309d01005c5302006c6b0200507002006070020008710200c871020004720200e67202005e7302007e750200
+      m_ExpandedIDs: 26a5fdff92a5fdffd2a5fdffd6a5fdffdaa5fdffdea5fdff5aa6fdff5ea6fdff62a6fdff86a6fdff8ca6fdff58affdffa8b2fdff16b5fdff12b6fdffa6b9fdff0abbfdff06bcfdffc6cbfdff8407ffff8807ffffbc66ffff0a9901004c9a01007a9a0100aa9a0100e69a0100909b0100ca9b01000a9c01001e9c0100289c0100529c0100169d0100289d0100309d01005c5302006c6b0200507002006070020008710200c871020004720200e67202007e750200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -521,22 +521,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animation/Enemy
+    - Assets/Scripts/Enemy
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Animation/Enemy
+  - Assets/Scripts/Enemy
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\midge\Documents\GitHub\DruidsOfDumnonia\DruidsofDumnonia
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 02aa0100
-    m_LastClickedID: 109058
-    m_ExpandedIDs: 00000000a8a90100aaa90100aca90100aea90100b0a90100b2a90100b4a90100b6a90100b8a90100baa90100bca90100bea90100c0a90100c2a90100c4a90100c6a90100c8a90100caa90100cca90100cea90100d0a90100d2a90100d4a90100d6a90100d8a90100daa90100dca90100dea90100e0a90100e2a90100e4a90100e6a90100e8a90100eaa90100eca90100eea90100f0a90100f2a9010006aa01001aaa010030aa010050aa010052aa010056aa010018b0010090b0010098b001001ab1010000ca9a3b
+    scrollPos: {x: 0, y: 12}
+    m_SelectedIDs: 4cb20100
+    m_LastClickedID: 111180
+    m_ExpandedIDs: 00000000a8a90100aaa90100aca90100aea90100b0a90100b2a90100b4a90100b6a90100b8a90100baa90100bca90100bea90100c0a90100c2a90100c4a90100c6a90100c8a90100caa90100cca90100cea90100d0a90100d2a90100d4a90100d6a90100d8a90100daa90100dca90100dea90100e0a90100e2a90100e4a90100e6a90100e8a90100eaa90100eca90100eea90100f0a90100f2a901001aaa010030aa010050aa010052aa010056aa010018b0010090b0010098b001001ab1010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -564,7 +564,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a8a90100aaa90100aca90100aea90100b0a90100b2a90100b4a90100b6a90100b8a90100baa90100bca90100bea90100c0a90100c2a90100c4a90100c6a90100c8a90100caa90100cca90100cea90100d0a90100d2a90100d4a90100d6a90100d8a90100daa90100dca90100dea90100e0a90100e2a90100e4a90100e6a90100e8a90100eaa90100eca90100eea90100f0a90100f2a90100
+    m_ExpandedIDs: 00000000a8a90100aaa90100aca90100aea90100b0a90100b2a90100b4a90100b6a90100b8a90100baa90100bca90100bea90100c0a90100c2a90100c4a90100c6a90100c8a90100caa90100cca90100cea90100d0a90100d2a90100d4a90100d6a90100d8a90100daa90100dca90100dea90100e0a90100e2a90100e4a90100e6a90100e8a90100eaa90100eea90100f0a90100f2a9010030aa010050aa010052aa010056aa010018b0010090b0010098b001001ab1010000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -589,8 +589,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 98a6fdff
+    m_LastClickedInstanceID: -153960
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000fa98000000000000
     m_RenameOverlay:
@@ -608,7 +608,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 7}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -704,8 +704,8 @@ MonoBehaviour:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: -153960
+  m_LastVerticalScrollValue: 527
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0
