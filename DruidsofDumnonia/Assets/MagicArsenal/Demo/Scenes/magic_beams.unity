@@ -5659,7 +5659,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.32622904, g: 0.17906573, b: 0.50735295, a: 1}
-  m_Intensity: 2.7
+  m_Intensity: 400
   m_Range: 60
   m_SpotAngle: 100.77675
   m_InnerSpotAngle: 81.94607
@@ -6313,9 +6313,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ca6e8aba9ca3dd74aa132aee693f0613, type: 3}
 --- !u!4 &530369200 stripped
 Transform:
@@ -6700,9 +6700,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 55a1164b8ac9bd944add1ccc95f72426, type: 3}
 --- !u!1 &597244622
 GameObject:
@@ -8178,9 +8178,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 45433283f7c40f54388e4af0ca59dc42, type: 3}
 --- !u!1 &1003338069
 GameObject:
@@ -8736,6 +8736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1209323428}
   - component: {fileID: 1209323432}
+  - component: {fileID: 1209323431}
   - component: {fileID: 1209323429}
   m_Layer: 0
   m_Name: Camera
@@ -8766,6 +8767,14 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1209323427}
   m_Enabled: 1
+--- !u!124 &1209323431
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209323427}
+  m_Enabled: 0
 --- !u!20 &1209323432
 Camera:
   m_ObjectHideFlags: 0
@@ -9914,7 +9923,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5808823, g: 0.58377284, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 8
   m_Range: 19
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -20829,7 +20838,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -164.40002, y: -20.599915}
+  m_AnchoredPosition: {x: -164.40002, y: -20.599976}
   m_SizeDelta: {x: 307, y: 28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2015188270
@@ -21252,7 +21261,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.5808823, g: 0.58377284, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 8
   m_Range: 19
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

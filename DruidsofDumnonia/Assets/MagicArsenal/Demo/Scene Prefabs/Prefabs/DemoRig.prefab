@@ -43,7 +43,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.3600779, g: 0.3860509, b: 0.66176474, a: 1}
-  m_Intensity: 5
+  m_Intensity: 800
   m_Range: 45
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -145,9 +145,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &2329388
 MeshRenderer:
@@ -198,6 +198,7 @@ GameObject:
   m_Component:
   - component: {fileID: 482082}
   - component: {fileID: 2000298}
+  - component: {fileID: 12459264}
   - component: {fileID: 8167562}
   - component: {fileID: 11499534}
   m_Layer: 0
@@ -264,6 +265,14 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!124 &12459264
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199504}
+  m_Enabled: 1
 --- !u!81 &8167562
 AudioListener:
   m_ObjectHideFlags: 0
