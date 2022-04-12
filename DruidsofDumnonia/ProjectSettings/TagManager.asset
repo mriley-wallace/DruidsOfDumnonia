@@ -9,6 +9,7 @@ TagManager:
   - Fire
   - Thunder
   - Bullet
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,8 +19,8 @@ TagManager:
   - UI
   - button
   - Grab Ignore Ray
-  - 
-  - 
+  - Player
+  - Ground
   - 
   - 
   - 
