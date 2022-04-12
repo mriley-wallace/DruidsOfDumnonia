@@ -44,7 +44,6 @@ public class EnemyController : MonoBehaviour
         }
         if (distance <= attackRadius)
             {
-                enemyAnimator.SetBool("isWalking", false);
                 enemyAnimator.SetBool("isAttack", true);
             }
         

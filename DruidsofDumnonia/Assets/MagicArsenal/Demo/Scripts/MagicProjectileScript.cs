@@ -21,45 +21,45 @@ public class MagicProjectileScript : MonoBehaviour
         Destroy(muzzleParticle, 1.5f); // Lifetime of muzzle effect.
 		}
     }
- 
-   // public void OnCollisionEnter(Collision hit)
-   // {
-   //     if (!hasCollided)
-   //     {
-   //         hasCollided = true;
-   //         //transform.DetachChildren();
-   //         impactParticle = Instantiate(impactParticle, transform.position, Quaternion.FromToRotation(Vector3.up, impactNormal)) as GameObject;
-   //         //Debug.DrawRay(hit.contacts[0].point, hit.contacts[0].normal * 1, Color.yellow);
- 
-   //         if (hit.gameObject.tag == "Destructible") // Projectile will destroy objects tagged as Destructible
-   //         {
-   //             Destroy(hit.gameObject);
-   //         }
- 
- 
-   //         //yield WaitForSeconds (0.05);
-   //         foreach (GameObject trail in trailParticles)
-   //         {
-   //             GameObject curTrail = transform.Find(projectileParticle.name + "/" + trail.name).gameObject;
-   //             curTrail.transform.parent = null;
-   //             Destroy(curTrail, 3f);
-   //         }
-   //         Destroy(projectileParticle, 3f);
-   //         Destroy(impactParticle, 3f);
-   //         Destroy(gameObject);
-   //         //projectileParticle.Stop();
-			
-			//ParticleSystem[] trails = GetComponentsInChildren<ParticleSystem>();
-   //         //Component at [0] is that of the parent i.e. this object (if there is any)
-   //         for (int i = 1; i < trails.Length; i++)
-   //         {
-   //             ParticleSystem trail = trails[i];
-   //             if (!trail.gameObject.name.Contains("Trail"))
-   //                 continue;
 
-   //             trail.transform.SetParent(null);
-   //             Destroy(trail.gameObject, 2);
-   //         }
-   //     }
-   // }
+    public void OnCollisionEnter(Collision hit)
+    {
+        if (!hasCollided)
+        {
+            hasCollided = true;
+            //transform.DetachChildren();
+            impactParticle = Instantiate(impactParticle, transform.position, Quaternion.FromToRotation(Vector3.up, impactNormal)) as GameObject;
+            //Debug.DrawRay(hit.contacts[0].point, hit.contacts[0].normal * 1, Color.yellow);
+
+            if (hit.gameObject.tag == "Destructible") // Projectile will destroy objects tagged as Destructible
+            {
+                Destroy(gameObject);
+            }
+
+
+            //yield WaitForSeconds (0.05);
+            foreach (GameObject trail in trailParticles)
+            {
+                GameObject curTrail = transform.Find(projectileParticle.name + "/" + trail.name).gameObject;
+                curTrail.transform.parent = null;
+                Destroy(curTrail, 3f);
+            }
+            Destroy(projectileParticle, 3f);
+            Destroy(impactParticle, 3f);
+            Destroy(gameObject);
+            //projectileParticle.Stop();
+
+            ParticleSystem[] trails = GetComponentsInChildren<ParticleSystem>();
+            //Component at [0] is that of the parent i.e. this object (if there is any)
+            for (int i = 1; i < trails.Length; i++)
+            {
+                ParticleSystem trail = trails[i];
+                if (!trail.gameObject.name.Contains("Trail"))
+                    continue;
+
+                trail.transform.SetParent(null);
+                Destroy(trail.gameObject, 2);
+            }
+        }
+    }
 }
