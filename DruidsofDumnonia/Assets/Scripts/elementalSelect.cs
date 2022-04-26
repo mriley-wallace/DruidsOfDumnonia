@@ -10,7 +10,40 @@ public class elementalSelect : MonoBehaviour
     public FireBullet leftProjectile;
     public void whenSelected()
     {
-       
+        //switch (button)
+        //{
+        //    case [0]:
+
+        //        Debug.Log("Water was selected");
+        //        leftProjectile.m_Bullet = bullets[0];
+        //        rightProjectile.m_Bullet = bullets[0];
+        //        break;
+
+        //    case :
+
+        //        Debug.Log("Air was selected");
+        //        leftProjectile.m_Bullet = bullets[1];
+        //        rightProjectile.m_Bullet = bullets[1];
+
+        //        break;
+
+        //    case GameObject[]:
+
+        //        Debug.Log("Fire was selected");
+        //        leftProjectile.m_Bullet = bullets[2];
+        //        rightProjectile.m_Bullet = bullets[2];
+        //        break;
+
+        //    case GameObject[]:
+
+        //        Debug.Log("Thunder was selected");
+        //        leftProjectile.m_Bullet = bullets[3];
+        //        rightProjectile.m_Bullet = bullets[3];
+        //        break;
+
+
+
+        //}
     }
     public void WaterSelected()
         {
@@ -45,36 +78,7 @@ public class elementalSelect : MonoBehaviour
     
 
 
-        //switch (button)
-        //{
-        //    case button[0]:
-                
-        //        Debug.Log("Water was selected");
-        //        projectile.m_Bullet = bullets[0];
-        //        break;
-
-        //    case 1:
-
-        //        Debug.Log("Air was selected");
-        //        projectile.m_Bullet = bullets[1];
-
-        //        break;
-
-        //    case 2:
-
-        //        Debug.Log("Fire was selected");
-        //        projectile.m_Bullet = bullets[2];
-        //        break;
-
-        //    case 3:
-
-        //        Debug.Log("Thunder was selected");
-        //        projectile.m_Bullet = bullets[3];
-        //        break;
-
-
-
-        //}
+       
 
     
 }
