@@ -13,5 +13,10 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
 
+    private void Start()
+    {
+        HealthSystem healthSystem = new HealthSystem(100);
+    }
+
 
 }
