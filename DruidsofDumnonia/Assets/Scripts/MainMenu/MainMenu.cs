@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public AudioSource choir;
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -15,5 +16,10 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Game has been Quit");
         Application.Quit();
+    }
+
+    private void Start()
+    {
+        choir.Play();
     }
 }
