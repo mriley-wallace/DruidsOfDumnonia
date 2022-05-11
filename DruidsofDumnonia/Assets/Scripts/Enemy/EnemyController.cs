@@ -16,10 +16,13 @@ public class EnemyController : MonoBehaviour
 
     public Animator enemyAnimator;
 
+  
+
     void Start()
     {
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
+        HealthSystem healthSystem = new HealthSystem(100);
     }
 
     // Update is called once per frame

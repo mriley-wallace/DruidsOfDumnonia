@@ -16,7 +16,7 @@ public class UIText : MonoBehaviour
 
     private void Start()
     {
-        textWriter.AddWriter(messageText, "Hello World", .1f, true);
+        textWriter.AddWriter(messageText, "Lord, it is time to embue the Gods magic, and destroy these Romans. Here, use the power of úplyft (air) to kill these 3 invaders. ", .1f, true);
     }
 
 }

@@ -6,6 +6,11 @@ public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager instance;
 
+    public bool WaterDead = false;
+    public bool AirDead = false;
+    public bool ThunderDead = false;
+    public bool FireDead = false;
+
     private void Awake()
     {
         instance = this;
