@@ -594,7 +594,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1442191585}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &54937478
 PrefabInstance:
@@ -908,12 +908,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.5561438, y: -13.250062}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &74042400 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4289946276842542191, guid: 613ef9ad08795c44c83138004a7c80bb,
-    type: 3}
-  m_PrefabInstance: {fileID: 4289946276912191567}
-  m_PrefabAsset: {fileID: 0}
 --- !u!20 &74042402 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4289946276842542189, guid: 613ef9ad08795c44c83138004a7c80bb,
@@ -3106,6 +3100,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1348621789}
     m_Modifications:
+    - target: {fileID: 6841679610572615201, guid: fa285dc3f7dbe9440912ee5d19f72d8b,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 1465054069}
     - target: {fileID: 6841679610572615202, guid: fa285dc3f7dbe9440912ee5d19f72d8b,
         type: 3}
       propertyPath: m_Name
@@ -5395,7 +5394,7 @@ Transform:
   - {fileID: 228153063}
   - {fileID: 1501286000}
   m_Father: {fileID: 1442191585}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &687902059
 PrefabInstance:
@@ -7552,6 +7551,10 @@ MonoBehaviour:
   - {fileID: 100000, guid: 39062704a091e5444bd6d8ef80fb9a56, type: 3}
   rightProjectile: {fileID: 1868497443}
   leftProjectile: {fileID: 564470417}
+  waterPicked: 0
+  airPicked: 0
+  firePicked: 0
+  thunderPicked: 0
 --- !u!4 &1048167847
 Transform:
   m_ObjectHideFlags: 0
@@ -7582,7 +7585,7 @@ MonoBehaviour:
   AirDead: 0
   ThunderDead: 0
   FireDead: 0
-  player: {fileID: 74042400}
+  player: {fileID: 1348621787}
 --- !u!1001 &1057753253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7695,6 +7698,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2793200935628463941, guid: af15c6bf444f8414fae09d17e96ea674,
+        type: 3}
+      propertyPath: eSelect
+      value: 
+      objectReference: {fileID: 1048167846}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af15c6bf444f8414fae09d17e96ea674, type: 3}
 --- !u!4 &1067141294 stripped
@@ -9787,6 +9795,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2793200935628463941, guid: af15c6bf444f8414fae09d17e96ea674,
+        type: 3}
+      propertyPath: eSelect
+      value: 
+      objectReference: {fileID: 1048167846}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af15c6bf444f8414fae09d17e96ea674, type: 3}
 --- !u!4 &1333016121 stripped
@@ -10699,9 +10712,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 553131579}
   - {fileID: 51233498}
   - {fileID: 662000375}
+  - {fileID: 553131579}
   m_Father: {fileID: 924668148}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14990,6 +15003,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2793200935628463941, guid: af15c6bf444f8414fae09d17e96ea674,
+        type: 3}
+      propertyPath: eSelect
+      value: 
+      objectReference: {fileID: 1048167846}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af15c6bf444f8414fae09d17e96ea674, type: 3}
 --- !u!4 &2134808643 stripped
@@ -38747,6 +38765,8 @@ MonoBehaviour:
   lookRadius: 10
   attackRadius: 2
   enemyAnimator: {fileID: 7050005065594698824}
+  eSelect: {fileID: 0}
+  damage: 0
 --- !u!114 &8894187248602770508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38762,6 +38782,8 @@ MonoBehaviour:
   lookRadius: 10
   attackRadius: 2
   enemyAnimator: {fileID: 7050005066391528404}
+  eSelect: {fileID: 0}
+  damage: 0
 --- !u!114 &8894187248990965488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38777,3 +38799,5 @@ MonoBehaviour:
   lookRadius: 10
   attackRadius: 2
   enemyAnimator: {fileID: 7050005066775003496}
+  eSelect: {fileID: 0}
+  damage: 0
