@@ -9,6 +9,7 @@ public class ProgressButton : MonoBehaviour
     public GameObject ThunderStart;
     public GameObject AirStart;
     public GameObject FightStart;
+    public GameObject _GM;
 
     public void TeleportPlayer()
     {
@@ -30,6 +31,9 @@ public class ProgressButton : MonoBehaviour
         if (enemy.FireDead == true && enemy.ThunderDead == true && enemy.AirDead == true && enemy.WaterDead == true)
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = FightStart.transform.position;
+            _GM.GetComponent<WaveSpawner>().enabled = true;
+
+            
         }
 
         gameObject.SetActive(false);

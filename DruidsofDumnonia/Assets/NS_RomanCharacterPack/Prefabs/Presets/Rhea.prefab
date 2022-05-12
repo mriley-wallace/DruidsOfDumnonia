@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fa51e27ce5ca724d9a32e195c7278fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 10
+  lookRadius: 50
   attackRadius: 2
   enemyAnimator: {fileID: 95854645410961842}
   eSelect: {fileID: 0}
