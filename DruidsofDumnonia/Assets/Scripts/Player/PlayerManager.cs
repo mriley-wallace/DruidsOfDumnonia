@@ -12,6 +12,10 @@ public class PlayerManager : MonoBehaviour
     public bool FireDead = false;
     public int TotalDeaths;
 
+    public GameObject AirButton;
+    public GameObject ThunderButton;
+    public GameObject FireButton;
+
     public GameObject pButton;
     private void Awake()
     {
@@ -33,18 +37,21 @@ public class PlayerManager : MonoBehaviour
             WaterDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
+            AirButton.SetActive(true);
         }
         if(TotalDeaths >= 3 && WaterDead == true)
         {
             AirDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
+            ThunderButton.SetActive(true);
         }
         if(TotalDeaths >= 3 && AirDead == true)
         {
             ThunderDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
+            FireButton.SetActive(true);
         }
         if(TotalDeaths >=3 && ThunderDead == true)
         {
