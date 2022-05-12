@@ -7294,7 +7294,7 @@ GameObject:
   - component: {fileID: 7050005066700285951}
   m_Layer: 0
   m_Name: RomanCharacter_C
-  m_TagString: Untagged
+  m_TagString: FireEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7364,7 +7364,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.12
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!136 &4781239221543191744

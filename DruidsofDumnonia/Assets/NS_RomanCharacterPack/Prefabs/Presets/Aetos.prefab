@@ -3935,7 +3935,7 @@ GameObject:
   - component: {fileID: 3194887615550855574}
   m_Layer: 0
   m_Name: Aetos
-  m_TagString: Untagged
+  m_TagString: AirEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3990,7 +3990,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: -0.12
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!64 &275731534326778238

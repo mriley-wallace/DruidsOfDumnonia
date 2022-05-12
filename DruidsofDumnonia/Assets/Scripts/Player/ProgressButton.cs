@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ProgressButton : MonoBehaviour
 {
-    public PlayerManager enemy = new PlayerManager();
+    public PlayerManager enemy;
     public GameObject FireStart;
     public GameObject ThunderStart;
     public GameObject AirStart;
