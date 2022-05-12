@@ -2395,6 +2395,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1346985785}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &308681627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6841679610572615202, guid: fa285dc3f7dbe9440912ee5d19f72d8b,
+    type: 3}
+  m_PrefabInstance: {fileID: 394775147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &311476387
 GameObject:
   m_ObjectHideFlags: 0
@@ -7585,6 +7591,8 @@ MonoBehaviour:
   AirDead: 0
   ThunderDead: 0
   FireDead: 0
+  TotalDeaths: 0
+  pButton: {fileID: 308681627}
   player: {fileID: 1348621787}
 --- !u!1001 &1057753253
 PrefabInstance:

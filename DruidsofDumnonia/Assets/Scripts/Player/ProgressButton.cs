@@ -32,7 +32,7 @@ public class ProgressButton : MonoBehaviour
             GameObject.FindGameObjectWithTag("Player").transform.position = FightStart.transform.position;
         }
 
-        this.gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
 

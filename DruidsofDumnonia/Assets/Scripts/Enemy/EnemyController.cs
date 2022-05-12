@@ -64,6 +64,7 @@ public class EnemyController : MonoBehaviour
         if(healthSystem.GetHealth() == 0)
         {
             Destroy(this.gameObject);
+           PlayerManager.instance.CollectEnemyDeath(1);
         }
 
 
