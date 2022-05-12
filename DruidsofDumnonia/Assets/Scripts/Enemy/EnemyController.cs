@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour
 
     public float attackRadius = 2.0f;
 
-    Transform target;
+    public Transform target;
 
     NavMeshAgent agent;
 
@@ -22,9 +22,9 @@ public class EnemyController : MonoBehaviour
 
     public HealthSystem healthSystem;
 
-    void Start()
+    void Awake()
     {
-        target = PlayerManager.instance.player.transform;
+        target = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
         eSelect = FindObjectOfType<elementalSelect>();
         healthSystem = new HealthSystem(100);
@@ -63,7 +63,7 @@ public class EnemyController : MonoBehaviour
 
         if(healthSystem.GetHealth() == 0)
         {
-            Destroy(this.gameObject);
+            Destroy(gameObject);
            PlayerManager.instance.CollectEnemyDeath(1);
         }
 

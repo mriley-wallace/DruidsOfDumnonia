@@ -17,43 +17,54 @@ public class PlayerManager : MonoBehaviour
     public GameObject FireButton;
 
     public GameObject pButton;
+
+    public HealthSystem healthSystem;
+
+    public HealthBar healthbar;
+
+    public GameObject player;
+
+
     private void Awake()
     {
         instance = this;
         
     }
 
-    public GameObject player;
+
 
     private void Start()
     {
-        HealthSystem healthSystem = new HealthSystem(100);
+       healthSystem = new HealthSystem(100);
     }
 
     public void Update()
     {
-        if(TotalDeaths >= 3)
+
+        healthbar.SetHealth(healthSystem.GetHealth());
+
+        if(TotalDeaths == 3 && WaterDead == false)
         {
             WaterDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
             AirButton.SetActive(true);
         }
-        if(TotalDeaths >= 3 && WaterDead == true)
+        if(TotalDeaths == 3 && WaterDead == true && AirDead == false)
         {
             AirDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
             ThunderButton.SetActive(true);
         }
-        if(TotalDeaths >= 3 && AirDead == true)
+        if(TotalDeaths == 3 && AirDead == true && ThunderDead == false)
         {
             ThunderDead = true;
             pButton.SetActive(true);
             TotalDeaths = 0;
             FireButton.SetActive(true);
         }
-        if(TotalDeaths >=3 && ThunderDead == true)
+        if(TotalDeaths ==3 && ThunderDead == true && FireDead == false)
         {
             FireDead = true;
             pButton.SetActive(true);
