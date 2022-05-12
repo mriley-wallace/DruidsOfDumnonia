@@ -16,13 +16,18 @@ public class EnemyController : MonoBehaviour
 
     public Animator enemyAnimator;
 
-  
+    public elementalSelect eSelect;
+
+    public int damage;
+
+    public HealthSystem healthSystem;
 
     void Start()
     {
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
-        HealthSystem healthSystem = new HealthSystem(100);
+        eSelect = FindObjectOfType<elementalSelect>();
+        healthSystem = new HealthSystem(100);
     }
 
     // Update is called once per frame
@@ -55,6 +60,13 @@ public class EnemyController : MonoBehaviour
             enemyAnimator.SetBool("isIdle", true);
         }
 
+
+        if(healthSystem.GetHealth() == 0)
+        {
+            Destroy(this.gameObject);
+        }
+
+
     }
 
     void FaceTarget()
@@ -70,4 +82,55 @@ public class EnemyController : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+
+    public void OnCollisionEnter(Collision collision)
+    {
+        damage = 0;
+
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+
+            if (agent.CompareTag("AirEnemy") && eSelect.airPicked == true )
+            {
+                damage = 25;
+
+            }
+            else if (agent.CompareTag("AirEnemy") && eSelect.airPicked == false)
+            {
+                damage = 10;
+            }
+
+            if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == true)
+            {
+                damage = 25;
+            }
+            else if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == false)
+            {
+                damage = 10;
+            }
+
+            if(agent.CompareTag("FireEnemy") && eSelect.firePicked == true)
+            {
+                damage = 25;
+            }
+            else if(agent.CompareTag("FireEnemy") && eSelect.firePicked == false)
+            {
+                damage = 10;
+            }
+
+            if (agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == true)
+            {
+                damage = 25;
+            }
+            else if(agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == false)
+            {
+                damage = 10;
+            }
+
+        }
+
+        healthSystem.Damage(damage);
+        Debug.Log(healthSystem.GetHealth());
+        Destroy(collision.gameObject);
+    }
 }

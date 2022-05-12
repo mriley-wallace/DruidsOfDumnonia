@@ -8,35 +8,46 @@ public class ShieldScript : MonoBehaviour
     private Collider BulletCollider;
     public int ShieldHealth;
 
+
     public void Awake()
     {
         ShieldHealth = 100;
+      
     }
 
-
-    public void OnTriggerEnter(Collider other)
+    public void Update()
     {
-        Bullet = GameObject.FindGameObjectWithTag("Bullet");
-        BulletCollider = Bullet.GetComponent<Collider>();
-
-        if (other == BulletCollider)
-        {
-            ShieldHealth -= 25;
-            Destroy(Bullet);
-        }
-
-        if (ShieldHealth < 0)
-        {
-            ShieldHealth = 0;
-        }
-
-        if (ShieldHealth == 0)
-        {
-            Destroy(this.gameObject);
-        }
-
-        
-
         
     }
-}
+
+
+    public void OnCollisionEnter(Collision other) {
+        
+            //Bullet = GameObject.FindGameObjectWithTag("Bullet");
+            //BulletCollider = Bullet.GetComponent<Collider>();
+
+            if (other.gameObject.tag == "Bullet")
+            {
+                ShieldHealth -= 25;
+            Destroy(other.gameObject);
+            }
+
+            if (ShieldHealth < 0)
+            {
+                ShieldHealth = 0;
+            }
+
+            if (ShieldHealth == 0)
+            {
+                Destroy(this.gameObject);
+            }
+
+
+
+
+        } 
+    
+    
+ }
+
+

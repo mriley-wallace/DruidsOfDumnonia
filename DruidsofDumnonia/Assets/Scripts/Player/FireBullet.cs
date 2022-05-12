@@ -60,5 +60,11 @@ public class FireBullet : MonoBehaviour
 
             }
         }
+
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        
     }
 }

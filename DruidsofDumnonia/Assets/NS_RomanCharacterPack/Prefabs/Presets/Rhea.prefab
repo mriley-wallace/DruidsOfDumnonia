@@ -51,7 +51,7 @@ Rigidbody:
   m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 4
-  m_CollisionDetection: 3
+  m_CollisionDetection: 0
 --- !u!195 &1333016126
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -96,7 +96,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005195539652592}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.2913453
   m_Height: 1.7287952
@@ -117,6 +117,8 @@ MonoBehaviour:
   lookRadius: 10
   attackRadius: 2
   enemyAnimator: {fileID: 95854645410961842}
+  eSelect: {fileID: 0}
+  damage: 0
 --- !u!1 &1011925727753886
 GameObject:
   m_ObjectHideFlags: 0

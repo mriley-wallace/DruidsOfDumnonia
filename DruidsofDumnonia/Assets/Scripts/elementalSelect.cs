@@ -8,6 +8,12 @@ public class elementalSelect : MonoBehaviour
     public GameObject[] bullets;
     public FireBullet rightProjectile;
     public FireBullet leftProjectile;
+
+    public bool waterPicked;
+    public bool airPicked;
+    public bool firePicked;
+    public bool thunderPicked;
+
     public void whenSelected()
     {
         //switch (button)
@@ -47,6 +53,10 @@ public class elementalSelect : MonoBehaviour
     }
     public void WaterSelected()
         {
+        waterPicked = true;
+        airPicked = false;
+        firePicked = false;
+        thunderPicked = false;
         Debug.Log("Water was selected");
         rightProjectile.m_Bullet = bullets[0];
         leftProjectile.m_Bullet = bullets[0];
@@ -54,6 +64,10 @@ public class elementalSelect : MonoBehaviour
 
     public void AirSelected()
     {
+        waterPicked = false;
+        airPicked = true;
+        firePicked = false;
+        thunderPicked = false;
         Debug.Log("Air was selected");
         rightProjectile.m_Bullet = bullets[1];
         leftProjectile.m_Bullet = bullets[1];
@@ -61,7 +75,10 @@ public class elementalSelect : MonoBehaviour
 
     public void FireSelected()
         {
-
+        waterPicked = false;
+        airPicked = false;
+        firePicked = true;
+        thunderPicked = false;
         Debug.Log("Fire was selected");
         rightProjectile.m_Bullet = bullets[2];
         leftProjectile.m_Bullet = bullets[2];
@@ -69,7 +86,10 @@ public class elementalSelect : MonoBehaviour
 
     public void ThunderSelected()
     {
-
+        waterPicked = false;
+        airPicked = false;
+        firePicked = false;
+        thunderPicked = true;
         Debug.Log("Thunder was selected");
         rightProjectile.m_Bullet = bullets[3];
         leftProjectile.m_Bullet = bullets[3];
