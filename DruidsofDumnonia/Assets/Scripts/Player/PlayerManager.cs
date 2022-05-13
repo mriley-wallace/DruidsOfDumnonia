@@ -24,7 +24,6 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
 
-
     private void Awake()
     {
         instance = this;

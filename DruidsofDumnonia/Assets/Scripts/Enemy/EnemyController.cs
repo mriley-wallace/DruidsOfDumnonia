@@ -22,6 +22,9 @@ public class EnemyController : MonoBehaviour
 
     public HealthSystem healthSystem;
 
+    private Camera playerCam;
+    [SerializeField] private GameObject floatDamage;
+
     void Awake()
     {
         target = GameObject.FindGameObjectWithTag("Player").transform;
@@ -34,6 +37,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
+      
 
         if (distance <= lookRadius && distance >= attackRadius)
         {
@@ -86,6 +90,8 @@ public class EnemyController : MonoBehaviour
 
     public void OnCollisionEnter(Collision collision)
     {
+        playerCam = Camera.main;
+        Quaternion camView = playerCam.transform.rotation;
         damage = 0;
 
         if (collision.gameObject.CompareTag("Bullet"))
@@ -94,38 +100,46 @@ public class EnemyController : MonoBehaviour
             if (agent.CompareTag("AirEnemy") && eSelect.airPicked == true )
             {
                 damage = 25;
+                DamageToScreen(camView, damage);
 
             }
             else if (agent.CompareTag("AirEnemy") && eSelect.airPicked == false)
             {
                 damage = 10;
+                DamageToScreen(camView, damage);
             }
 
             if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == true)
             {
                 damage = 25;
+                DamageToScreen(camView, damage);
             }
             else if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == false)
             {
                 damage = 10;
+                DamageToScreen(camView, damage);
             }
 
             if(agent.CompareTag("FireEnemy") && eSelect.firePicked == true)
             {
                 damage = 25;
+                DamageToScreen(camView, damage);
             }
             else if(agent.CompareTag("FireEnemy") && eSelect.firePicked == false)
             {
                 damage = 10;
+                DamageToScreen(camView, damage);
             }
 
             if (agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == true)
             {
                 damage = 25;
+                DamageToScreen(camView, damage);
             }
             else if(agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == false)
             {
                 damage = 10;
+                DamageToScreen(camView, damage);
             }
 
         }
@@ -134,4 +148,16 @@ public class EnemyController : MonoBehaviour
         Debug.Log(healthSystem.GetHealth());
         Destroy(collision.gameObject);
     }
+
+    public void DamageToScreen(Quaternion iCamView, int iDamage)
+    {
+        if (!floatDamage.scene.IsValid())
+        {
+            GameObject damagePoints = Instantiate(floatDamage, transform.position, iCamView) as GameObject;
+
+            damagePoints.transform.GetChild(0).GetComponent<TextMesh>().text = iDamage.ToString();
+        }
+
+    }
+
 }

@@ -4035,9 +4035,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lookRadius: 50
   attackRadius: 2
+  target: {fileID: 0}
   enemyAnimator: {fileID: 95312440700493656}
   eSelect: {fileID: 0}
   damage: 0
+  floatDamage: {fileID: 5858030827285220007, guid: 87669cf5c81b5f747b68346ffc7d96ec,
+    type: 3}
 --- !u!1 &1487765360741254
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,6 +8,7 @@ public class HealthBar : MonoBehaviour
     public Slider slider;
     public Gradient gradient;
     public Image fill;
+    public Text healthText;
     public HealthSystem healthsystem;
 
 
@@ -24,5 +25,7 @@ public class HealthBar : MonoBehaviour
         slider.value = health;
 
         fill.color = gradient.Evaluate(slider.normalizedValue);
+
+        healthText.text = health.ToString();
     }
 }
