@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -35,6 +36,7 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
        healthSystem = new HealthSystem(100);
+       healthbar.SetMaxHealth(healthSystem.GetHealth());
     }
 
     public void Update()
@@ -70,6 +72,10 @@ public class PlayerManager : MonoBehaviour
             TotalDeaths = 0;
         }
         
+        if(healthSystem.GetHealth() == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
    
     }
 
@@ -77,4 +83,14 @@ public class PlayerManager : MonoBehaviour
     {
         TotalDeaths += deaths;
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Weapon"))
+        {
+            healthSystem.Damage(10);
+        }
+    }
+
+
 }

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class HealthSystem
 {
@@ -23,6 +24,7 @@ public class HealthSystem
     public void Damage(int damageAmount)
     {
         health -= damageAmount;
+
     
         if (health < 0) health = 0;
     }
@@ -32,5 +34,14 @@ public class HealthSystem
         health += healAmount;
         
         if (health > healthMax) health = healthMax;
+    }
+
+
+    public void DeathScreen()
+    {
+        if (health == 0)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }

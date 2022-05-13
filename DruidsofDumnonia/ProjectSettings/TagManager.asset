@@ -15,6 +15,7 @@ TagManager:
   - FireEnemy
   - ThunderEnemy
   - Shield
+  - Weapon
   layers:
   - Default
   - TransparentFX

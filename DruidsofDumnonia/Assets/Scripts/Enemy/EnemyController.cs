@@ -97,46 +97,46 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
 
-            if (agent.CompareTag("AirEnemy") && eSelect.airPicked == true )
+            if (agent.CompareTag("AirEnemy") && eSelect.airPicked)
             {
                 damage = 25;
                 DamageToScreen(camView, damage);
 
             }
-            else if (agent.CompareTag("AirEnemy") && eSelect.airPicked == false)
+            else if (agent.CompareTag("AirEnemy") && !eSelect.airPicked)
             {
                 damage = 10;
                 DamageToScreen(camView, damage);
             }
 
-            if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == true)
+            if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked)
             {
                 damage = 25;
                 DamageToScreen(camView, damage);
             }
-            else if(agent.CompareTag("WaterEnemy") && eSelect.waterPicked == false)
+            else if(agent.CompareTag("WaterEnemy") && !eSelect.waterPicked)
             {
                 damage = 10;
                 DamageToScreen(camView, damage);
             }
 
-            if(agent.CompareTag("FireEnemy") && eSelect.firePicked == true)
+            if(agent.CompareTag("FireEnemy") && eSelect.firePicked)
             {
                 damage = 25;
                 DamageToScreen(camView, damage);
             }
-            else if(agent.CompareTag("FireEnemy") && eSelect.firePicked == false)
+            else if(agent.CompareTag("FireEnemy") && !eSelect.firePicked)
             {
                 damage = 10;
                 DamageToScreen(camView, damage);
             }
 
-            if (agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == true)
+            if (agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked)
             {
                 damage = 25;
                 DamageToScreen(camView, damage);
             }
-            else if(agent.CompareTag("ThunderEnemy") && eSelect.thunderPicked == false)
+            else if(agent.CompareTag("ThunderEnemy") && !eSelect.thunderPicked)
             {
                 damage = 10;
                 DamageToScreen(camView, damage);
@@ -159,5 +159,6 @@ public class EnemyController : MonoBehaviour
         }
 
     }
+
 
 }
