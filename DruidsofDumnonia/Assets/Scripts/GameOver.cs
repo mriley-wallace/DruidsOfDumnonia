@@ -11,11 +11,13 @@ public class GameOver : MonoBehaviour
     public GameObject RestartButton;
     public HealthSystem health;
     public GameObject DeathCounter;
+   
 
     public void Start()
     {
         health = PlayerManager.instance.healthSystem;
     }
+
 
     // Update is called once per frame
     public void Update()
@@ -25,7 +27,7 @@ public class GameOver : MonoBehaviour
             ReturnButton.SetActive(true);
             RestartButton.SetActive(true);
             DeathCounter.SetActive(false);
-           
+
 
         }
         else

@@ -47,8 +47,8 @@ public class FireBullet : MonoBehaviour
             {
                 bSpawnBullet = false;
 
-                //Vector3 dir = detectHand.GetDirectionToFingers();
-                Vector3 dir = new Vector3(detectHand.GetDirectionToFingers().x, detectHand.GetDirectionToFingers().y, -Player.transform.position.z);
+                Vector3 dir = detectHand.GetDirectionToFingers();
+                //Vector3 dir = new Vector3(detectHand.GetDirectionToFingers().x, detectHand.GetDirectionToFingers().y, -Player.transform.position.z);
                 Debug.Log(detectHand.GetDirectionToFingers());
                 dir.Normalize();
                 Vector3 startPos = detectHand.GetFinger(EFinger.eIndex).GetTipPosition();

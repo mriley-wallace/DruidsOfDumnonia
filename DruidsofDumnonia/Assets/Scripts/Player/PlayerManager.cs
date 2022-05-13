@@ -33,6 +33,7 @@ public class PlayerManager : MonoBehaviour
 
     public TextMeshProUGUI GOScript;
 
+
     private void Awake()
     {
         instance = this;
@@ -84,7 +85,9 @@ public class PlayerManager : MonoBehaviour
         {
             GameObject.FindGameObjectWithTag("Player").transform.position = DeathArea.transform.position;
             
+            
         }
+
    
     }
 

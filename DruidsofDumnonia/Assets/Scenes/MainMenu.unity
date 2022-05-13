@@ -12774,7 +12774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cde758866b99d4aa7bc0546a895c35, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  choir: {fileID: 0}
+  choir: {fileID: 2016439235}
 --- !u!4 &2016439234
 Transform:
   m_ObjectHideFlags: 0
