@@ -27,7 +27,7 @@ public class EnemyController : MonoBehaviour
 
     void Awake()
     {
-        target = GameObject.FindGameObjectWithTag("Player").transform;
+        target = GameObject.FindObjectOfType<PlayerManager>().transform;
         agent = GetComponent<NavMeshAgent>();
         eSelect = FindObjectOfType<elementalSelect>();
         healthSystem = new HealthSystem(100);
