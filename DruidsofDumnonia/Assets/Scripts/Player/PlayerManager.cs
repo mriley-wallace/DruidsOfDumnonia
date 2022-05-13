@@ -70,6 +70,7 @@ public class PlayerManager : MonoBehaviour
             pButton.SetActive(true);
             TotalDeaths = 0;
         }
+        
    
     }
 

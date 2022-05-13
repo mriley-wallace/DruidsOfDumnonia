@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameObject pauseMenu;
+    public GameObject ResumeButton;
+    public GameObject MainButton;
     public bool isPaused;
     void Start()
     {
@@ -13,23 +14,25 @@ public class PauseMenu : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
             {
                 isPaused = false;
-                pauseMenu.SetActive(false);
+                ResumeButton.SetActive(false);
+                MainButton.SetActive(false);
                 Time.timeScale = 1f;
-                Cursor.lockState = CursorLockMode.Locked;
+                
             }
             else
             {
                 isPaused = true;
-                pauseMenu.SetActive(true);
+                ResumeButton.SetActive(true);
+                MainButton.SetActive(true);
                 Time.timeScale = 0f;
-                Cursor.lockState = CursorLockMode.None;
+                
             }
         }
     }
@@ -37,7 +40,8 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         isPaused = false;
-        pauseMenu.SetActive(false);
+        ResumeButton.SetActive(false);
+        MainButton.SetActive(false);
         Time.timeScale = 1f;
 
     }
