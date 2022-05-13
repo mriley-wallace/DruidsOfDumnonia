@@ -11,6 +11,10 @@ public class ProgressButton : MonoBehaviour
     public GameObject FightStart;
     public GameObject _GM;
 
+
+
+
+
     public void TeleportPlayer()
     {
         if (enemy.WaterDead == true)

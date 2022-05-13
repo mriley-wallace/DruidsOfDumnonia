@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -12,6 +14,8 @@ public class PlayerManager : MonoBehaviour
     public bool ThunderDead = false;
     public bool FireDead = false;
     public int TotalDeaths;
+
+    public GameObject DeathArea;
 
     public GameObject AirButton;
     public GameObject ThunderButton;
@@ -24,6 +28,10 @@ public class PlayerManager : MonoBehaviour
     public HealthBar healthbar;
 
     public GameObject player;
+
+    public TextMeshProUGUI DeathCounter;
+
+    public TextMeshProUGUI GOScript;
 
     private void Awake()
     {
@@ -74,7 +82,8 @@ public class PlayerManager : MonoBehaviour
         
         if(healthSystem.GetHealth() == 0)
         {
-            SceneManager.LoadScene(0);
+            GameObject.FindGameObjectWithTag("Player").transform.position = DeathArea.transform.position;
+            
         }
    
     }
@@ -82,6 +91,11 @@ public class PlayerManager : MonoBehaviour
     public void CollectEnemyDeath(int deaths)
     {
         TotalDeaths += deaths;
+        DeathCounter.text = "Enemies Killed: " + TotalDeaths;
+        if (healthSystem.GetHealth() == 0)
+        {
+            GOScript.text += TotalDeaths;
+        }
     }
 
     public void OnTriggerEnter(Collider other)

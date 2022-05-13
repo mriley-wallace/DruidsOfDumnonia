@@ -2,20 +2,37 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameOver : MonoBehaviour
 {
-    public GameObject GameOverMenu;
+    
+    public GameObject ReturnButton;
+    public GameObject RestartButton;
     public HealthSystem health;
+    public GameObject DeathCounter;
 
+    public void Start()
+    {
+        health = PlayerManager.instance.healthSystem;
+    }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
-        if (health.GetHealth() <= 0)
+        if(health.GetHealth() == 0)
         {
-                GameOverMenu.SetActive(true);
-                Cursor.lockState = CursorLockMode.Confined;    
+            ReturnButton.SetActive(true);
+            RestartButton.SetActive(true);
+            DeathCounter.SetActive(false);
+           
+
+        }
+        else
+        {
+            ReturnButton.SetActive(false);
+            RestartButton.SetActive(false);
+            DeathCounter.SetActive(true);
         }
     }
 

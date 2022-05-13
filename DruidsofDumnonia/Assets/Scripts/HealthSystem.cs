@@ -36,12 +36,4 @@ public class HealthSystem
         if (health > healthMax) health = healthMax;
     }
 
-
-    public void DeathScreen()
-    {
-        if (health == 0)
-        {
-            SceneManager.LoadScene(0);
-        }
-    }
 }
